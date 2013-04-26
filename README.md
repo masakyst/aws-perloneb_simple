@@ -4,15 +4,37 @@ aws-perloneb_simple
 Perl on AWS Elastic Beanstalk
 
 use git
+
 use AWS Elastic Beanstalk Command Line Tool
 
 
 # DESCRIPTION
 
-mkdir mojotalks
-cd mojotalks
+mkdir perloneb
+
+cd perloneb
+
 git init
+
 AWSDevTools-RepositorySetup.sh
+
+eb init
+
+Select a solution stack.
+Available solution stacks are:
+2) 64bit Amazon Linux running PHP 5.4
+
+eb start
+
+git add hello.pl
+
+git add .ebextensions
+
+git add .gitignore
+
+git commit -m "hello perl"
+
+git aws.push
 
 
 # AUTHOR
